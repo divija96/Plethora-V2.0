@@ -1,0 +1,375 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/mukta/ontologies/2016/10/testontology#"
+     xml:base="http://www.semanticweb.org/mukta/ontologies/2016/10/testontology"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/mukta/ontologies/2016/10/testontology"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/mukta/ontologies/2016/10/testontology#belongsTo -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mukta/ontologies/2016/10/testontology#belongsTo">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mukta/ontologies/2016/10/testontology#Items"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/mukta/ontologies/2016/10/testontology#brand"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mukta/ontologies/2016/10/testontology#buys -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mukta/ontologies/2016/10/testontology#buys">
+        <rdfs:comment rdf:resource="http://www.semanticweb.org/mukta/ontologies/2016/10/testontology#buys"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mukta/ontologies/2016/10/testontology#consistOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mukta/ontologies/2016/10/testontology#consistOf">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mukta/ontologies/2016/10/testontology#category"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/mukta/ontologies/2016/10/testontology#Items"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mukta/ontologies/2016/10/testontology#hasDifferent -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mukta/ontologies/2016/10/testontology#hasDifferent">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mukta/ontologies/2016/10/testontology#Items"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/mukta/ontologies/2016/10/testontology#itemsize"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mukta/ontologies/2016/10/testontology#sells -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mukta/ontologies/2016/10/testontology#sells">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mukta/ontologies/2016/10/testontology#Seller"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/mukta/ontologies/2016/10/testontology#Items"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/mukta/ontologies/2016/10/testontology#brand_name -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/mukta/ontologies/2016/10/testontology#brand_name">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mukta/ontologies/2016/10/testontology#brand"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mukta/ontologies/2016/10/testontology#buyer_id -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/mukta/ontologies/2016/10/testontology#buyer_id">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mukta/ontologies/2016/10/testontology#Buyer"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mukta/ontologies/2016/10/testontology#category_id -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/mukta/ontologies/2016/10/testontology#category_id">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mukta/ontologies/2016/10/testontology#category"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mukta/ontologies/2016/10/testontology#category_name -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/mukta/ontologies/2016/10/testontology#category_name">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mukta/ontologies/2016/10/testontology#category"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mukta/ontologies/2016/10/testontology#contact_no -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/mukta/ontologies/2016/10/testontology#contact_no">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mukta/ontologies/2016/10/testontology#Customer"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mukta/ontologies/2016/10/testontology#discount -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/mukta/ontologies/2016/10/testontology#discount">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mukta/ontologies/2016/10/testontology#brand"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mukta/ontologies/2016/10/testontology#email -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/mukta/ontologies/2016/10/testontology#email">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mukta/ontologies/2016/10/testontology#Customer"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mukta/ontologies/2016/10/testontology#f_name -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/mukta/ontologies/2016/10/testontology#f_name">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mukta/ontologies/2016/10/testontology#Customer"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mukta/ontologies/2016/10/testontology#item_id -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/mukta/ontologies/2016/10/testontology#item_id">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mukta/ontologies/2016/10/testontology#Items"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mukta/ontologies/2016/10/testontology#item_name -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/mukta/ontologies/2016/10/testontology#item_name">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mukta/ontologies/2016/10/testontology#Items"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mukta/ontologies/2016/10/testontology#l_name -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/mukta/ontologies/2016/10/testontology#l_name">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mukta/ontologies/2016/10/testontology#Customer"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mukta/ontologies/2016/10/testontology#order_id -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/mukta/ontologies/2016/10/testontology#order_id">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mukta/ontologies/2016/10/testontology#Buyer"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mukta/ontologies/2016/10/testontology#picture -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/mukta/ontologies/2016/10/testontology#picture"/>
+    
+
+
+    <!-- http://www.semanticweb.org/mukta/ontologies/2016/10/testontology#price -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/mukta/ontologies/2016/10/testontology#price">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mukta/ontologies/2016/10/testontology#Items"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mukta/ontologies/2016/10/testontology#seller_id -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/mukta/ontologies/2016/10/testontology#seller_id">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mukta/ontologies/2016/10/testontology#Seller"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mukta/ontologies/2016/10/testontology#sitem_id -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/mukta/ontologies/2016/10/testontology#sitem_id">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mukta/ontologies/2016/10/testontology#Seller"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mukta/ontologies/2016/10/testontology#size -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/mukta/ontologies/2016/10/testontology#size">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mukta/ontologies/2016/10/testontology#itemsize"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/mukta/ontologies/2016/10/testontology#Buyer -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mukta/ontologies/2016/10/testontology#Buyer">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mukta/ontologies/2016/10/testontology#Customer"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mukta/ontologies/2016/10/testontology#Customer -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mukta/ontologies/2016/10/testontology#Customer"/>
+    
+
+
+    <!-- http://www.semanticweb.org/mukta/ontologies/2016/10/testontology#Items -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mukta/ontologies/2016/10/testontology#Items"/>
+    
+
+
+    <!-- http://www.semanticweb.org/mukta/ontologies/2016/10/testontology#Seller -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mukta/ontologies/2016/10/testontology#Seller">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mukta/ontologies/2016/10/testontology#Customer"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mukta/ontologies/2016/10/testontology#brand -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mukta/ontologies/2016/10/testontology#brand">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mukta/ontologies/2016/10/testontology#Items"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mukta/ontologies/2016/10/testontology#cart -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mukta/ontologies/2016/10/testontology#cart"/>
+    
+
+
+    <!-- http://www.semanticweb.org/mukta/ontologies/2016/10/testontology#category -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mukta/ontologies/2016/10/testontology#category"/>
+    
+
+
+    <!-- http://www.semanticweb.org/mukta/ontologies/2016/10/testontology#itemsize -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mukta/ontologies/2016/10/testontology#itemsize">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mukta/ontologies/2016/10/testontology#Items"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mukta/ontologies/2016/10/testontology#placeOrder -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mukta/ontologies/2016/10/testontology#placeOrder"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/mukta/ontologies/2016/10/testontology#Accessories-Women -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mukta/ontologies/2016/10/testontology#Accessories-Women">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mukta/ontologies/2016/10/testontology#category"/>
+        <category_id rdf:datatype="http://www.w3.org/2001/XMLSchema#int">3</category_id>
+        <category_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Women-Accesories</category_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mukta/ontologies/2016/10/testontology#Curtains -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mukta/ontologies/2016/10/testontology#Curtains">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mukta/ontologies/2016/10/testontology#category"/>
+        <category_id rdf:datatype="http://www.w3.org/2001/XMLSchema#int">14</category_id>
+        <category_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Curtains</category_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mukta/ontologies/2016/10/testontology#IndianWear -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mukta/ontologies/2016/10/testontology#IndianWear">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mukta/ontologies/2016/10/testontology#category"/>
+        <category_id rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</category_id>
+        <category_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IndianWear</category_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mukta/ontologies/2016/10/testontology#Mukta -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mukta/ontologies/2016/10/testontology#Mukta">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mukta/ontologies/2016/10/testontology#Buyer"/>
+        <contact_no rdf:datatype="http://www.w3.org/2001/XMLSchema#string">9920042829</contact_no>
+        <email rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mukta3396@gmail.com</email>
+        <f_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mukta</f_name>
+        <l_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kulkarni</l_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mukta/ontologies/2016/10/testontology#T-shirt -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mukta/ontologies/2016/10/testontology#T-shirt">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mukta/ontologies/2016/10/testontology#Items"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mukta/ontologies/2016/10/testontology#WesternWear-Women -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mukta/ontologies/2016/10/testontology#WesternWear-Women">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mukta/ontologies/2016/10/testontology#category"/>
+        <category_id rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2</category_id>
+        <category_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">WomenWear-Women</category_name>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.5.20160517-0735) https://github.com/owlcs/owlapi -->
+
